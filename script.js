@@ -12,117 +12,6 @@ const categoryTranslations = {
     'puzzle': 'أحجية'
 };
 
-const gamesJSON = [
-    {
-        "id": 1,
-        "title": "The Witcher 3: Wild Hunt - تعريب كامل",
-        "shortDescription": "ترجمة وتعريب كامل للعبة The Witcher 3",
-        "fullDescription": "ترجمة وتعريب لعبة The Witcher 3 بشكل كامل مع جميع الحوارات والنصوص والمهام الجانبية. ترجمة احترافية تحافظ على روح اللعبة الأصلية. يشمل التعريب جميع النصوص في القائمة والمهام الرئيسية والفرعية والحوارات.",
-        "category": "rpg",
-        "image": "images/witcher3.jpg",
-        "downloadUrl": "#",
-        "source": "فريق تعريب عربي",
-        "version": "2.0",
-        "size": "450 MB",
-        "releaseDate": "2024-01-15",
-        "featured": true,
-        "tags": ["RPG", "مغامرات", "عالم مفتوح", "تعريب"],
-        "seoTitle": "تحميل تعريب The Witcher 3 بالعربي - سنونو",
-        "seoDescription": "تحميل تعريب لعبة The Witcher 3 Wild Hunt بالعربية. ترجمة كاملة لجميع الحوارات والنصوص مع الحفاظ على روح اللعبة.",
-        "seoKeywords": "the witcher 3, تعريب, witcher 3 عربي, ترجمة ويتشر, تحميل تعريب"
-    },
-    {
-        "id": 2,
-        "title": "Cyberpunk 2077 - تعريب عربي",
-        "shortDescription": "تعريب شامل للعبة Cyberpunk 2077",
-        "fullDescription": "تعريب شامل للعبة Cyberpunk 2077 يشمل جميع النصوص والحوارات مع دعم كامل للغة العربية. تم التعريب بدقة مع مراعاة السياق العلمي والتقني في اللعبة.",
-        "category": "rpg",
-        "image": "images/cyberpunk.jpg",
-        "downloadUrl": "#",
-        "source": "مجموعة الترجمة العربية",
-        "version": "1.5",
-        "size": "380 MB",
-        "releaseDate": "2024-02-20",
-        "featured": true,
-        "tags": ["RPG", "عالم مفتوح", "مستقبل"],
-        "seoTitle": "تحميل تعريب Cyberpunk 2077 بالعربي - سنونو",
-        "seoDescription": "تحميل تعريب لعبة Cyberpunk 2077 بالعربية. تعريب شامل لجميع النصوص والحوارات والقوائم.",
-        "seoKeywords": "cyberpunk 2077, تعريب, سايبربانك, ترجمة cyberpunk, تحميل تعريب"
-    },
-    {
-        "id": 3,
-        "title": "God of War Ragnarök - ترجمة",
-        "shortDescription": "ترجمة كاملة لـ God of War Ragnarök",
-        "fullDescription": "ترجمة كاملة لـ God of War Ragnarök مع الحفاظ على الأسماء الأصلية للأحداث التاريخية mythology النورسية. تم الحفاظ على روح القصص الأسطورية مع تقديم ترجمة عربية سلسة.",
-        "category": "action",
-        "image": "images/gow.jpg",
-        "downloadUrl": "#",
-        "source": "倍 التعريب",
-        "version": "1.0",
-        "size": "290 MB",
-        "releaseDate": "2024-03-10",
-        "featured": false,
-        "tags": ["أكشن", "مغامرات"],
-        "seoTitle": "تحميل ترجمة God of War Ragnarök بالعربي - سنونو",
-        "seoDescription": "تحميل ترجمة لعبة God of War Ragnarök بالعربية. ترجمة كاملة مع الحفاظ على الأسماء الأسطورية.",
-        "seoKeywords": "god of war ragnarok, ترجمة, غاد اوف وور, ترجمة god of war, تحميل ترجمة"
-    },
-    {
-        "id": 4,
-        "title": "Red Dead Redemption 2 - تعريب",
-        "shortDescription": "تعريب لعبة Red Dead Redemption 2",
-        "fullDescription": "تعريب لعبة Red Dead Redemption 2 بشكل كامل مع ترجمة جميع الحوارات والنكات الأمريكية. يشمل التعريب النصوص المنطوقة والمكتوبة مع الحفاظ على اللهجة الأمريكية الغربية.",
-        "category": "action",
-        "image": "images/rdr2.jpg",
-        "downloadUrl": "#",
-        "source": "مشروع التعريب المفتوح",
-        "version": "3.0",
-        "size": "520 MB",
-        "releaseDate": "2024-01-25",
-        "featured": true,
-        "tags": ["أكشن", "عالم مفتوح", "غربي"],
-        "seoTitle": "تحميل تعريب Red Dead Redemption 2 بالعربي - سنونو",
-        "seoDescription": "تحميل تعريب لعبة Red Dead Redemption 2 بالعربية. تعريب كامل مع ترجمة جميع الحوارات والنكات.",
-        "seoKeywords": "red dead redemption 2, تعريب, ريد ديد, ترجمة rdr2, تحميل تعريب"
-    },
-    {
-        "id": 5,
-        "title": "FIFA 24 - تعريب الواجهة",
-        "shortDescription": "تعريب واجهة لعبة FIFA 24",
-        "fullDescription": "تعريب واجهة لعبة FIFA 24 مع ترجمة جميع القوائم والخيارات والأسماء. يشمل تعريب أسماء اللاعبين والفرق والدوريات حسب اللغة العربية مع الحفاظ على الأسماء الرسمية.",
-        "category": "sports",
-        "image": "images/fifa24.jpg",
-        "downloadUrl": "#",
-        "source": "مجتمع FIFA العربي",
-        "version": "1.2",
-        "size": "85 MB",
-        "releaseDate": "2024-04-05",
-        "featured": false,
-        "tags": ["رياضية", "كرة قدم"],
-        "seoTitle": "تحميل تعريب FIFA 24 بالعربي - سنونو",
-        "seoDescription": "تحميل تعريب واجهة لعبة FIFA 24 بالعربية. تعريب القوائم والأسماء والفرق.",
-        "seoKeywords": "fifa 24, تعريب, فيفا, ترجمة fifa, تعريب واجهة"
-    },
-    {
-        "id": 6,
-        "title": "Civilization VI - تعريب",
-        "shortDescription": "تعريب شامل لـ Civilization VI",
-        "fullDescription": "تعريب شامل لـ Civilization VI يشمل جميع الحضارات والتقنيات والأحداث التاريخية. تم تعريب أكثر من 1000 نص مع الحفاظ على الدقة التاريخية للمعلومات.",
-        "category": "strategy",
-        "image": "images/civ6.jpg",
-        "downloadUrl": "#",
-        "source": "فريق الاستراتيجيات العربية",
-        "version": "2.1",
-        "size": "320 MB",
-        "releaseDate": "2024-02-15",
-        "featured": false,
-        "tags": ["استراتيجية", "تاريخ"],
-        "seoTitle": "تحميل تعريب Civilization VI بالعربي - سنونو",
-        "seoDescription": "تحميل تعريب لعبة Civilization VI بالعربية. تعريب شامل لجميع الحضارات والتقنيات.",
-        "seoKeywords": "civilization 6, تعريب, سيفيليزيشن, ترجمة civ 6, تعريب استراتيجية"
-    }
-];
-
 function getGameSlug(title) {
     return title
         .replace(/[:\-–—]/g, ' ')
@@ -145,24 +34,24 @@ function initMainPage() {
 
 function setupScrollEffect() {
     const nav = document.querySelector('nav');
-    let lastScroll = 0;
-
     window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll > 100) {
+        if (window.pageYOffset > 100) {
             nav.classList.add('scrolled');
         } else {
             nav.classList.remove('scrolled');
         }
-
-        lastScroll = currentScroll;
     }, { passive: true });
 }
 
-function loadGames() {
+async function loadGames() {
     showLoading(true);
-    gamesData = gamesJSON;
+    try {
+        const response = await fetch('games.json');
+        if (!response.ok) throw new Error('Failed to load');
+        gamesData = await response.json();
+    } catch (e) {
+        gamesData = [];
+    }
     filteredGames = [...gamesData];
     displayGames(filteredGames);
     updateStats();
@@ -256,12 +145,20 @@ function showNoResults(show) {
 }
 
 // ===== GAME PAGE =====
-function initGamePage() {
+async function initGamePage() {
+    try {
+        const response = await fetch('games.json');
+        if (!response.ok) throw new Error('Failed to load');
+        gamesData = await response.json();
+    } catch (e) {
+        gamesData = [];
+    }
+
     const params = new URLSearchParams(window.location.search);
     const gameId = parseInt(params.get('id'));
 
     if (gameId) {
-        const game = gamesJSON.find(g => g.id === gameId);
+        const game = gamesData.find(g => g.id === gameId);
         if (game) {
             setGameSEO(game);
             renderGamePage(game);
@@ -272,15 +169,7 @@ function initGamePage() {
     const currentFile = window.location.pathname.split('/').pop();
     if (currentFile.endsWith('-Localization.html')) {
         const slug = currentFile.replace('-Localization.html', '');
-        const game = gamesJSON.find(g => {
-            const gameSlug = g.title
-                .replace(/[:\-–—]/g, ' ')
-                .replace(/[^\w\s]/g, '')
-                .replace(/\s+/g, '-')
-                .replace(/-+/g, '-')
-                .trim();
-            return gameSlug === slug;
-        });
+        const game = gamesData.find(g => getGameSlug(g.title) === slug);
         if (game) {
             setGameSEO(game);
             renderGamePage(game);
@@ -317,7 +206,6 @@ function setGameSEO(game) {
     const twDesc = document.getElementById('twDescription');
     if (twDesc) twDesc.setAttribute('content', desc);
 
-    // Structured Data
     const schema = {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
@@ -334,7 +222,6 @@ function setGameSEO(game) {
     const schemaScript = document.getElementById('gameSchema');
     if (schemaScript) schemaScript.textContent = JSON.stringify(schema);
 
-    // Canonical
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {
         canonical = document.createElement('link');
@@ -375,7 +262,7 @@ function renderGamePage(game) {
                 </div>
                 <div class="game-page-body">
                     <h3 class="game-page-section-title">
-                        <i class="fas fa-info-circle"></i> وصف الترجمة
+                        <i class="fas fa-info-circle"></i> وصف التعريب
                     </h3>
                     <p class="game-page-description">${game.fullDescription}</p>
 
@@ -415,7 +302,7 @@ function renderGamePage(game) {
 
                     <button class="game-page-download" onclick="downloadGame('${game.downloadUrl}')">
                         <i class="fas fa-download"></i>
-                        تحميل الترجمة
+                        تحميل التعريب
                     </button>
                 </div>
             </div>
