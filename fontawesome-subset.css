@@ -1,0 +1,22 @@
+﻿/* Font Awesome Subset - Icons Only */
+@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:900;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2) format("woff2")}
+.fas,.fa-solid{font-family:"Font Awesome 6 Free";font-weight:900;font-style:normal;font-variant:normal;text-rendering:auto;-webkit-font-smoothing:antialiased}
+.fa-search::before{content:"\f002"}
+.fa-gamepad::before{content:"\f11b"}
+.fa-star::before{content:"\f005"}
+.fa-spinner::before{content:"\f110"}
+.fa-arrow-right::before{content:"\f061"}
+.fa-info-circle::before{content:"\f05a"}
+.fa-list-ul::before{content:"\f0ca"}
+.fa-code-branch::before{content:"\f126"}
+.fa-hdd::before{content:"\f0a0"}
+.fa-calendar::before{content:"\f133"}
+.fa-users::before{content:"\f0c0"}
+.fa-download::before{content:"\f019"}
+.fa-edit::before{content:"\f044"}
+.fa-trash::before{content:"\f2ed"}
+.fa-upload::before{content:"\f093"}
+.fa-file-code::before{content:"\f1c9"}
+.fa-sitemap::before{content:"\f0e8"}
+.fa-spin{animation:fa-spin 1s infinite linear}
+@keyframes fa-spin{0%{transform:rotate(0deg)}to{transform:rotate(360deg)}}

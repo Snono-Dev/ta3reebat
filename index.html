@@ -6,13 +6,6 @@
     <title>سنونو - تعريب الألعاب</title>
     <link rel="icon" type="image/png" href="images/logo.png">
     <meta name="description" content="سنونو - موقع تعريب الألعاب. تحميل تعريب ألعاب عربية لأشهر الألعاب العالمية مثل The Witcher 3 و Cyberpunk 2077 والمزيد.">
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-P3XTKXKB');</script>
-    <!-- End Google Tag Manager -->
     <meta name="keywords" content="تعريب ألعاب, ترجمة ألعاب, ألعاب عربية, تحميل تعريب, arabic game localization, سنونو">
     <meta name="author" content="سنونو">
     <meta name="robots" content="index, follow">
@@ -24,8 +17,12 @@
     <meta name="twitter:title" content="سنونو - تعريب الألعاب">
     <meta name="twitter:description" content="تحميل تعريب ألعاب عربية بشكل مجاني.">
     <link rel="canonical" href="https://snono-dev.github.io/ta3reebat/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" as="image" href="images/logo.png">
+    <link rel="stylesheet" href="fontawesome-subset.css">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -38,6 +35,13 @@
     </script>
 </head>
 <body>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P3XTKXKB');</script>
+    <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3XTKXKB"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -45,7 +49,7 @@
     <header>
         <div class="container">
             <div class="logo-container">
-                <img src="images/logo.png" alt="سنونو" class="site-logo">
+                <img src="images/logo.png" alt="سنونو" class="site-logo" width="100" height="100" loading="eager" decoding="async">
             </div>
             <h1>سنونو</h1>
             <p>تعريب الألعاب</p>
@@ -56,10 +60,12 @@
     <nav>
         <div class="container">
             <div class="search-box">
+                <label for="searchInput" class="sr-only">بحث</label>
                 <input type="text" id="searchInput" placeholder="ابحث عن لعبة...">
-                <button id="searchBtn"><i class="fas fa-search"></i></button>
+                <button id="searchBtn" aria-label="بحث"><i class="fas fa-search"></i></button>
             </div>
             <div class="filters">
+                <label for="categoryFilter" class="sr-only">التصنيف</label>
                 <select id="categoryFilter">
                     <option value="all">جميع التصنيفات</option>
                     <option value="action">أكشن</option>
@@ -108,7 +114,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script>initMainPage();</script>
+    <script src="script.js" defer></script>
+    <script>document.addEventListener('DOMContentLoaded',function(){initMainPage();});</script>
 </body>
 </html>

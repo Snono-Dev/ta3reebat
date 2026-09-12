@@ -114,7 +114,7 @@ function createGameCard(game, index) {
 
     a.innerHTML = `
         <div class="game-image-wrapper">
-            <img src="${imageUrl}" alt="${game.title}" class="game-image"
+            <img src="${imageUrl}" alt="${game.title}" class="game-image" width="400" height="225" loading="lazy" decoding="async"
                  onerror="this.onerror=null;this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect fill=%22%23111827%22 width=%22400%22 height=%22200%22/><text fill=%22%2300d4aa%22 font-family=%22sans-serif%22 font-size=%2224%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22>🎮</text></svg>'">
         </div>
         <div class="game-info">
@@ -240,7 +240,7 @@ function renderGamePage(game) {
 
     pageContainer.innerHTML = `
         <div class="game-page-header">
-            <img src="${imgSrc}" class="game-page-banner" alt="${game.title}"
+            <img src="${imgSrc}" class="game-page-banner" alt="${game.title}" width="1200" height="400" loading="lazy" decoding="async"
                  onerror="this.onerror=null;this.src='${fallbackImg}'">
             <div class="game-page-banner-overlay"></div>
         </div>
@@ -250,7 +250,7 @@ function renderGamePage(game) {
             </a>
             <div class="game-page-card">
                 <div class="game-page-top">
-                    <img src="${imgSrc}" class="game-page-thumb" alt="${game.title}"
+                    <img src="${imgSrc}" class="game-page-thumb" alt="${game.title}" width="200" height="200" loading="lazy" decoding="async"
                          onerror="this.onerror=null;this.src='${fallbackImg}'">
                     <div class="game-page-info">
                         <h1 class="game-page-title">${game.title}</h1>
