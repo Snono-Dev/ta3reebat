@@ -184,7 +184,7 @@ function setGameSEO(game) {
     const title = game.seoTitle || `${game.title} | سنونو`;
     const desc = game.seoDescription || game.fullDescription;
     const keywords = game.seoKeywords || game.tags.join(', ');
-    const url = `https://snono.github.io/ar/${getGameUrl(game)}`;
+    const url = `https://snono.github.io/ta3reebat/${getGameUrl(game)}`;
 
     document.title = title;
 
